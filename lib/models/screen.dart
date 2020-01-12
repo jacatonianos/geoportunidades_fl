@@ -1,0 +1,1 @@
+enum AppScreen { home, search, addInitiative, profile, about }
