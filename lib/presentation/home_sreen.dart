@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:geoportunidades/containers/screen_selector.dart';
+import 'package:geoportunidades/models/screen.dart';
 
 class HomeScreen extends StatelessWidget{
 
@@ -7,7 +8,7 @@ class HomeScreen extends StatelessWidget{
   Widget build(BuildContext context){
     var fontSize2 = 60.0;
     return Scaffold(
-      bottomNavigationBar: ScreenSelector(),
+      bottomNavigationBar: ScreenSelector(current: AppScreen.home),
       body: Container(
         alignment: Alignment.center,
         child: Text(
